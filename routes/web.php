@@ -28,6 +28,4 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::resource('roles', RolesController::class);
-    Route::resource('users', UsersController::class);
 });
